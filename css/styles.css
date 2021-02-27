@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Verdana', 'Merriweather', serif;
+}
+
+p {
+  color: #204051;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  font-family: 'Sacramento', cursive;
+  color: #204051;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #204051;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #204051;
+}
+
+hr {
+  border: none;
+  border-top: 8px dotted #84a9ac;
+  height: 0;
+  width: 75px;
+  background-color: white;
+}
+
+section {
+  background-color: #84a9ac;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../images/wave.png");
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 {
+  animation: animate2 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .wave.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.bottom-container{
+  line-height: 2;
+}
+
+
+.profile {
+  margin-bottom: 50px;
+}
+
+.skill-row1{
+  width: 50%;
+  margin: 50px auto 150px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-row2{
+  width: 50%;
+  margin: 50px auto 50px auto;
+  line-height: 2;
+  text-align: center;
+}
+
+.prof {
+  margin-top: 50px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+.software-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+
+.language-img {
+  width: 12.5%;
+
+}
+
+
+.first-cloud {
+  position: absolute;
+  right: 500px;
+  top: 50px;
+}
+
+.second-cloud {
+  position: absolute;
+  left: 500px;
+  bottom: 300px;
+}
